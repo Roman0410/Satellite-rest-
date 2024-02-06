@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-body">
+        <a href="index.html" class="logo"
+          ><img src="./img/logo.svg" alt=""
+        /></a>
+
+        <div class="headerRight">
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Главная</a>
+              </li>
+              <li class="nav-item current">
+                <a href="catalogPage.html" class="nav-link"
+                  >Каталог заведений</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="aboutPage.html" class="nav-link">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a href="blogPage.html" class="nav-link">Блог</a>
+              </li>
+              <li class="nav-item">
+                <a href="contactPage.html" class="nav-link">Связаться с нами</a>
+              </li>
+            </ul>
+            <div class="bottom-mobile">
+              <a href="#" class="btn transperent">Добавить заведение</a>
+              <a href="#" class="btn">Начать изучение</a>
+            </div>
+          </nav>
+          <div class="btn transperent">Добавить заведение</div>
+          <div class="header-burger"><span></span></div>
+        </div>
+      </div>
+    </header>
+    <section class="catalogSection">
+      <div class="container">
+        <div class="head">
+          <h2 class="section-title">Рестораны, бары</h2>
+        </div>
+
+        <div class="catalog-wrapper">
+          <div class="catalog">
+            <div class="filerOpenBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+              >
+                <path
+                  d="M14.375 12.33V5.0625C14.375 4.91332 14.3157 4.77024 14.2102 4.66475C14.1048 4.55926 13.9617 4.5 13.8125 4.5C13.6633 4.5 13.5202 4.55926 13.4148 4.66475C13.3093 4.77024 13.25 4.91332 13.25 5.0625V12.33L11.585 10.665C11.5335 10.6097 11.4714 10.5654 11.4024 10.5347C11.3334 10.5039 11.2589 10.4874 11.1834 10.4861C11.1079 10.4847 11.0328 10.4986 10.9628 10.5269C10.8928 10.5552 10.8291 10.5973 10.7757 10.6507C10.7223 10.7041 10.6802 10.7678 10.6519 10.8378C10.6236 10.9078 10.6097 10.9829 10.6111 11.0584C10.6124 11.1339 10.6289 11.2084 10.6597 11.2774C10.6904 11.3464 10.7347 11.4085 10.79 11.46L13.415 14.085C13.5205 14.1903 13.6634 14.2495 13.8125 14.2495C13.9616 14.2495 14.1045 14.1903 14.21 14.085L16.835 11.46C16.8903 11.4085 16.9346 11.3464 16.9653 11.2774C16.9961 11.2084 17.0126 11.1339 17.0139 11.0584C17.0153 10.9829 17.0014 10.9078 16.9731 10.8378C16.9448 10.7678 16.9027 10.7041 16.8493 10.6507C16.7959 10.5973 16.7322 10.5552 16.6622 10.5269C16.5922 10.4986 16.5171 10.4847 16.4416 10.4861C16.3661 10.4874 16.2916 10.5039 16.2226 10.5347C16.1536 10.5654 16.0915 10.6097 16.04 10.665L14.375 12.33ZM2 5.4375C2 5.28832 2.05926 5.14524 2.16475 5.03975C2.27024 4.93426 2.41332 4.875 2.5625 4.875H9.6875C9.83668 4.875 9.97976 4.93426 10.0852 5.03975C10.1907 5.14524 10.25 5.28832 10.25 5.4375C10.25 5.58668 10.1907 5.72976 10.0852 5.83525C9.97976 5.94074 9.83668 6 9.6875 6H2.5625C2.41332 6 2.27024 5.94074 2.16475 5.83525C2.05926 5.72976 2 5.58668 2 5.4375ZM2 9.1875C2 9.03832 2.05926 8.89524 2.16475 8.78975C2.27024 8.68426 2.41332 8.625 2.5625 8.625H6.6875C6.83668 8.625 6.97976 8.68426 7.08525 8.78975C7.19074 8.89524 7.25 9.03832 7.25 9.1875C7.25 9.33668 7.19074 9.47976 7.08525 9.58525C6.97976 9.69074 6.83668 9.75 6.6875 9.75H2.5625C2.41332 9.75 2.27024 9.69074 2.16475 9.58525C2.05926 9.47976 2 9.33668 2 9.1875ZM2 12.9375C2 12.7883 2.05926 12.6452 2.16475 12.5398C2.27024 12.4343 2.41332 12.375 2.5625 12.375H5.1875C5.33668 12.375 5.47976 12.4343 5.58525 12.5398C5.69074 12.6452 5.75 12.7883 5.75 12.9375C5.75 13.0867 5.69074 13.2298 5.58525 13.3352C5.47976 13.4407 5.33668 13.5 5.1875 13.5H2.5625C2.41332 13.5 2.27024 13.4407 2.16475 13.3352C2.05926 13.2298 2 13.0867 2 12.9375Z"
+                  fill="white"
+                />
+              </svg>
+              Фильтры
+            </div>
+            <div class="mainCatalog-list">
+              <a href="restCard.html" class="mainCatalog-item">
+                <img src="./img/hero.jpeg" alt="" />
+                <div class="card">
+                  <p class="title_24">Dinov Family catering/catering</p>
+                  <div class="info">
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20 city">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                  </div>
+                  <div class="category">Restaurants, bars</div>
+                </div>
+              </a>
+              <a href="restCard.html" class="mainCatalog-item">
+                <img src="./img/hero.jpeg" alt="" />
+                <div class="card">
+                  <p class="title_24">Dinov Family catering/catering</p>
+                  <div class="info">
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20 city">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                  </div>
+                  <div class="category">Restaurants, bars</div>
+                </div>
+              </a>
+              <a href="restCard.html" class="mainCatalog-item">
+                <img src="./img/hero.jpeg" alt="" />
+                <div class="card">
+                  <p class="title_24">Dinov Family catering/catering</p>
+                  <div class="info">
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20 city">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                  </div>
+                  <div class="category">Restaurants, bars</div>
+                </div>
+              </a>
+              <a href="restCard.html" class="mainCatalog-item">
+                <img src="./img/hero.jpeg" alt="" />
+                <div class="card">
+                  <p class="title_24">Dinov Family catering/catering</p>
+                  <div class="info">
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20 city">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                  </div>
+                  <div class="category">Restaurants, bars</div>
+                </div>
+              </a>
+              <a href="restCard.html" class="mainCatalog-item">
+                <img src="./img/hero.jpeg" alt="" />
+                <div class="card">
+                  <p class="title_24">Dinov Family catering/catering</p>
+                  <div class="info">
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20 city">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                  </div>
+                  <div class="category">Restaurants, bars</div>
+                </div>
+              </a>
+              <a href="restCard.html" class="mainCatalog-item">
+                <img src="./img/hero.jpeg" alt="" />
+                <div class="card">
+                  <p class="title_24">Dinov Family catering/catering</p>
+                  <div class="info">
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20 city">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                    <div class="info_item">
+                      <div class="name">
+                        <img src="./img/local.svg" alt="Local pin" />
+                        Локация:
+                      </div>
+                      <p class="text_20">Florida, Hollywood, FL</p>
+                    </div>
+                  </div>
+                  <div class="category">Restaurants, bars</div>
+                </div>
+              </a>
+            </div>
+            <div class="pagination">
+              <a href="#" class="current">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+            </div>
+          </div>
+          <div class="side-bar">
+            <h3 class="title_24">Категории</h3>
+            <div class="categories card">
+              <div class="types-list">
+                <div class="types-item">
+                  <div class="icon">
+                    <img src="./img/typeIcon.svg" alt="" />
+                  </div>
+                  <div class="typeName">Restaurants</div>
+                </div>
+                <div class="types-item">
+                  <div class="icon">
+                    <img src="./img/typeIcon.svg" alt="" />
+                  </div>
+                  <div class="typeName">Restaurants</div>
+                </div>
+                <div class="types-item">
+                  <div class="icon">
+                    <img src="./img/typeIcon.svg" alt="" />
+                  </div>
+                  <div class="typeName">Restaurants</div>
+                </div>
+                <div class="types-item">
+                  <div class="icon">
+                    <img src="./img/typeIcon.svg" alt="" />
+                  </div>
+                  <div class="typeName">Restaurants</div>
+                </div>
+                <div class="types-item">
+                  <div class="icon">
+                    <img src="./img/typeIcon.svg" alt="" />
+                  </div>
+                  <div class="typeName">Restaurants</div>
+                </div>
+                <div class="types-item">
+                  <div class="icon">
+                    <img src="./img/typeIcon.svg" alt="" />
+                  </div>
+                  <div class="typeName">Restaurants</div>
+                </div>
+                <div class="types-item">
+                  <div class="icon">
+                    <img src="./img/typeIcon.svg" alt="" />
+                  </div>
+                  <div class="typeName">Restaurants</div>
+                </div>
+                <div class="types-item">
+                  <div class="icon">
+                    <img src="./img/typeIcon.svg" alt="" />
+                  </div>
+                  <div class="typeName">Restaurants</div>
+                </div>
+                <div class="types-item">
+                  <div class="icon">
+                    <img src="./img/typeIcon.svg" alt="" />
+                  </div>
+                  <div class="typeName">Restaurants</div>
+                </div>
+              </div>
+              <div class="btn openPopup">Показать все</div>
+            </div>
+            <div class="features card">
+              <div class="check-list">
+                <label class="container"
+                  >Athmosphere
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"
+                  >Anniversary
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"
+                  >Breakfast
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"
+                  >Music
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="btn openPopup">Показать все</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------DESCTOP_POPUP------------------------>
+    <div class="filters-popup-wrapper">
+      <div class="popup">
+        <div class="top">
+          <div class="filters">
+            <div class="filter-item open" data-index="types">
+              <img src="./img/filterTypes.svg" alt="" />
+              Типы
+            </div>
+            <div class="filter-item" data-index="kitchen">
+              <img src="./img/filterKitch.svg" alt="" />
+              Кухни
+            </div>
+            <div class="filter-item" data-index="foods">
+              <img src="./img/filterFoods.svg" alt="" />
+              Блюда
+            </div>
+            <div class="filter-item" data-index="features">
+              <img src="./img/filterStar.svg" alt="" />
+              Особенности
+            </div>
+          </div>
+          <div class="searchInput">
+            <from class="search-box">
+              <div class="input">
+                <img src="./img/loop.svg" alt="dandruff" />
+                <input type="text" placeholder="Поиск..." />
+              </div>
+            </from>
+          </div>
+          <div class="close">
+            <img src="./img/close.svg" alt="" />
+          </div>
+        </div>
+        <div class="sort">
+          <p class="text_14">Сортировать по:</p>
+          <div class="sort-list">
+            <div class="sort-item popular">
+              <img src="./img/sort.svg" alt="" />
+              популярности
+            </div>
+            <div class="sort-item popular">
+              <img src="./img/sort.svg" alt="" />
+              алфавиту
+            </div>
+          </div>
+        </div>
+        <div class="filter-content">
+          <div class="filter_content-item open" data-index="types">
+            <div class="types-list">
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+              <div class="types-item">
+                <div class="icon">
+                  <img src="./img/typeIcon.svg" alt="" />
+                </div>
+                <div class="typeName">Restaurants</div>
+              </div>
+            </div>
+          </div>
+          <div class="filter_content-item" data-index="kitchen">
+            <div class="check-list">
+              <label class="container">
+                <p>Абхазская кухня Абхазская</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Сербская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <p>Индейская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <p>Казахская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Абхазская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Сербская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Индейская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p></p>
+                Казахская кухня
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Абхазская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p></p>
+                Сербская кухня
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Индейская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Казахская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Абхазская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Сербская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Индейская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Казахская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Абхазская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Сербская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Индейская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Казахская кухня</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="filter_content-item" data-index="foods">
+            <div class="check-list">
+              <label class="container"
+                ><p>Тушеное рагу</p>
+
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Бульи</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Мясо</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Кофе</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Рыба</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Шашлык</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Котлеты</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Свинина</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Хот-доги</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Паштет</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Утка</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Кебаб</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Мороженое</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Утка</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Хот-доги</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Паштет</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Утка</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Кебаб</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                ><p>Мороженое</p>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="filter_content-item" data-index="features">
+            <div class="check-list">
+              <label class="container"
+                >Встреча с друзьями
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Красивый вид
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Винная карта
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Живая музыка
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Бизнес-ланч
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >День рождения
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >На свежем воздухе
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Кальян
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="selected">
+            <div class="selectedList">
+              <div class="selectedItem">
+                <p class="selectName">Breakfast</p>
+                <img src="./img/closeBL.svg" alt="close" />
+              </div>
+              <div class="selectedItem">
+                <p class="selectName">Breakfast</p>
+                <img src="./img/closeBL.svg" alt="close" />
+              </div>
+              <div class="selectedItem">
+                <p class="selectName">Breakfast</p>
+                <img src="./img/closeBL.svg" alt="close" />
+              </div>
+              <div class="selectedItem">
+                <p class="selectName">Breakfast</p>
+                <img src="./img/closeBL.svg" alt="close" />
+              </div>
+            </div>
+            <div class="btn reset">Сбросить</div>
+          </div>
+          <div class="result">
+            <p class="found">Найдено 3 заведения</p>
+            <div class="btn apply">Применить</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------------->
+
+    <!-----------------MOBILE_Filter_modal-------------------->
+    <div class="modal-mobile-filter">
+      <div class="modal-head">
+        <div class="close">
+          <img src="./img/close.svg" alt="" />
+        </div>
+        <div class="title">Фильтры</div>
+        <div class="apply">Применить</div>
+      </div>
+      <div class="mobile-filters-list">
+        <div class="mobileFilters-item filter-item" data-index="mobile-types">
+          <div class="name">
+            <img src="./img/filterTypes.svg" alt="" />
+            Типы
+          </div>
+          <img src="./img/nextArrow.svg" alt="" />
+        </div>
+        <div class="mobileFilters-item filter-item" data-index="mobile-kitchen">
+          <div class="name">
+            <img src="./img/filterKitch.svg" alt="" />
+            Кухни
+          </div>
+          <img src="./img/nextArrow.svg" alt="" />
+        </div>
+        <div class="mobileFilters-item filter-item" data-index="mobile-foods">
+          <div class="name">
+            <img src="./img/filterFoods.svg" alt="" />
+            Блюда
+          </div>
+          <img src="./img/nextArrow.svg" alt="" />
+        </div>
+        <div
+          class="mobileFilters-item filter-item"
+          data-index="mobile-features"
+        >
+          <div class="name">
+            <img src="./img/filterStar.svg" alt="" />
+            Особенности
+          </div>
+          <img src="./img/nextArrow.svg" alt="" />
+        </div>
+      </div>
+      <div class="mobile-filters-content">
+        <div class="filter_content-item open" data-index="mobile-types">
+          <div class="modal-head">
+            <div class="back">
+              <img src="./img/back.svg" alt="" />
+            </div>
+            <div class="title">Фильтры</div>
+            <div class="apply">Применить</div>
+          </div>
+          <div class="found">
+            <div class="top">
+              <p>Найдено 3 заведения</p>
+              <div class="reset">Сбросить</div>
+            </div>
+            <div class="found-list">
+              <div class="item">
+                Китайская <img src="./img/closeBL.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="topManage">
+            <div class="name">
+              <img src="./img/filterTypes.svg" alt="" class="" />
+              Типы
+            </div>
+            <div class="searchInput">
+              <from class="search-box">
+                <div class="input">
+                  <img src="./img/loop.svg" alt="dandruff" />
+                  <input type="text" placeholder="Поиск..." />
+                </div>
+              </from>
+            </div>
+          </div>
+          <div class="sort">
+            <p class="text_14">Сортировать по:</p>
+            <div class="sort-list">
+              <div class="sort-item popular open">
+                <img src="./img/sort.svg" alt="" />
+                популярности
+              </div>
+              <div class="sort-item popular">
+                <img src="./img/sort.svg" alt="" />
+                алфавиту
+              </div>
+            </div>
+          </div>
+
+          <div class="types-list">
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+            <div class="types-item">
+              <div class="icon">
+                <img src="./img/typeIcon.svg" alt="" />
+              </div>
+              <div class="typeName">Restaurants</div>
+            </div>
+          </div>
+        </div>
+        <div class="filter_content-item" data-index="mobile-kitchen">
+          <div class="modal-head">
+            <div class="back">
+              <img src="./img/back.svg" alt="" />
+            </div>
+            <div class="title">Фильтры</div>
+            <div class="apply">Применить</div>
+          </div>
+          <div class="found">
+            <div class="top">
+              <p>Найдено 3 заведения</p>
+              <div class="reset">Сбросить</div>
+            </div>
+            <div class="found-list">
+              <div class="item">
+                Китайская <img src="./img/closeBL.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="topManage">
+            <div class="name">
+              <img src="./img/filterKitch.svg" alt="" class="" />
+              Кухни
+            </div>
+            <div class="searchInput">
+              <from class="search-box">
+                <div class="input">
+                  <img src="./img/loop.svg" alt="dandruff" />
+                  <input type="text" placeholder="Поиск..." />
+                </div>
+              </from>
+            </div>
+          </div>
+          <div class="sort">
+            <p class="text_14">Сортировать по:</p>
+            <div class="sort-list">
+              <div class="sort-item popular open">
+                <img src="./img/sort.svg" alt="" />
+                популярности
+              </div>
+              <div class="sort-item popular">
+                <img src="./img/sort.svg" alt="" />
+                алфавиту
+              </div>
+            </div>
+          </div>
+          <div class="check-list">
+            <label class="container">
+              <p>Абхазская кухня Абхазская</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p></p>
+              Казахская кухня
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p></p>
+              Сербская кухня
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="filter_content-item" data-index="mobile-foods">
+          <div class="modal-head">
+            <div class="back">
+              <img src="./img/back.svg" alt="" />
+            </div>
+            <div class="title">Фильтры</div>
+            <div class="apply">Применить</div>
+          </div>
+          <div class="found">
+            <div class="top">
+              <p>Найдено 3 заведения</p>
+              <div class="reset">Сбросить</div>
+            </div>
+            <div class="found-list">
+              <div class="item">
+                Китайская <img src="./img/closeBL.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="topManage">
+            <div class="name">
+              <img src="./img/filterFoods.svg" alt="" class="" />
+              Блюда
+            </div>
+            <div class="searchInput">
+              <from class="search-box">
+                <div class="input">
+                  <img src="./img/loop.svg" alt="dandruff" />
+                  <input type="text" placeholder="Поиск..." />
+                </div>
+              </from>
+            </div>
+          </div>
+          <div class="sort">
+            <p class="text_14">Сортировать по:</p>
+            <div class="sort-list">
+              <div class="sort-item popular open">
+                <img src="./img/sort.svg" alt="" />
+                популярности
+              </div>
+              <div class="sort-item popular">
+                <img src="./img/sort.svg" alt="" />
+                алфавиту
+              </div>
+            </div>
+          </div>
+          <div class="check-list">
+            <label class="container">
+              <p>Абхазская кухня Абхазская</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p></p>
+              Казахская кухня
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p></p>
+              Сербская кухня
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="filter_content-item" data-index="mobile-features">
+          <div class="modal-head">
+            <div class="back">
+              <img src="./img/back.svg" alt="" />
+            </div>
+            <div class="title">Фильтры</div>
+            <div class="apply">Применить</div>
+          </div>
+          <div class="found">
+            <div class="top">
+              <p>Найдено 3 заведения</p>
+              <div class="reset">Сбросить</div>
+            </div>
+            <div class="found-list">
+              <div class="item">
+                Китайская <img src="./img/closeBL.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="topManage">
+            <div class="name">
+              <img src="./img/filterStar.svg" alt="" class="" />
+              Особенности
+            </div>
+            <div class="searchInput">
+              <from class="search-box">
+                <div class="input">
+                  <img src="./img/loop.svg" alt="dandruff" />
+                  <input type="text" placeholder="Поиск..." />
+                </div>
+              </from>
+            </div>
+          </div>
+          <div class="sort">
+            <p class="text_14">Сортировать по:</p>
+            <div class="sort-list">
+              <div class="sort-item popular open">
+                <img src="./img/sort.svg" alt="" />
+                популярности
+              </div>
+              <div class="sort-item popular">
+                <img src="./img/sort.svg" alt="" />
+                алфавиту
+              </div>
+            </div>
+          </div>
+          <div class="check-list">
+            <label class="container">
+              <p>Абхазская кухня Абхазская</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p></p>
+              Казахская кухня
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p></p>
+              Сербская кухня
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Абхазская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Сербская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Индейская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              ><p>Казахская кухня</p>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------------->
+    <section class="aboutSection">
+      <div class="container">
+        <div class="head">
+          <h2 class="section-title">Header</h2>
+        </div>
+
+        <div class="textBlock">
+          <p class="title_24">Dinov Family catering/catering</p>
+
+          <div class="text_16">
+            “All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as All the Lorem Ipsum generators on the Internet
+            tend to repeat predefined chunks as All the Lorem Ipsum generators
+            on the Internet tend to repeat predefined chunks as All the Lorem
+            Ipsum “All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as All the Lorem Ipsum generators on the Internet
+            tend to repeat predefined chunks as All the Lorem Ipsum generators
+            on the Internet tend to repeat predefined chunks as All the Lorem
+            Ipsum <br /><br />
+            “All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as All the Lorem Ipsum generators on the Internet
+            tend to repeat predefined chunks as All the Lorem Ipsum generators
+            on the Internet tend to repeat predefined chunks as All the Lorem
+            Ipsum “All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as All the Lorem Ipsum generators on the Internet
+            tend to repeat predefined chunks as All the Lorem Ipsum generators
+            on the Internet tend to repeat predefined chunks as All the Lorem
+            Ipsum
+            <br /><br />
+            “All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as All the Lorem Ipsum generators on the Internet
+            tend to repeat predefined chunks as All the Lorem Ipsum generators
+            on the Internet tend to repeat predefined chunks as All the Lorem
+            Ipsum “All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as All the Lorem Ipsum generators on the Internet
+            tend to repeat predefined chunks as All the Lorem Ipsum generators
+            on the Internet tend to repeat predefined chunks as All the Lorem
+            Ipsum<br /><br />
+            “All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as All the Lorem Ipsum generators on the Internet
+            tend to repeat predefined chunks as All the Lorem Ipsum generators
+            on the Internet tend to repeat predefined chunks as All the Lorem
+            Ipsum “All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as All the Lorem Ipsum generators on the Internet
+            tend to repeat predefined chunks as All the Lorem Ipsum generators
+            on the Internet tend to repeat predefined chunks as All the Lorem
+            Ipsum
+          </div>
+          <div class="shadow"></div>
+        </div>
+        <div class="btn moreText">Eще</div>
+      </div>
+    </section>
+    <section class="local" style="background-image: url('./img/map.jpeg')">
+      <div class="container">
+        <div class="head">
+          <h2 class="section-title">Areas we serve</h2>
+          <p class="text_16">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta s
+          </p>
+        </div>
+
+        <div class="local-card">
+          <ul class="local-list">
+            <li class="local-item">
+              <h3 class="local-title-letter">A</h3>
+              <a href="locationPage.html" class="place">Addison</a>
+              <a href="locationPage.html" class="place">Algonquin</a>
+              <a href="locationPage.html" class="place">Arlington Heights</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">B</h3>
+              <a href="locationPage.html" class="place">Bannockburn</a>
+              <a href="locationPage.html" class="place">Barrington</a>
+              <a href="locationPage.html" class="place">Bartlett</a>
+              <a href="locationPage.html" class="place">Beach Park</a>
+              <a href="locationPage.html" class="place">Bellwood</a>
+              <a href="locationPage.html" class="place">Bensenville</a>
+              <a href="locationPage.html" class="place">Berkeley</a>
+              <a href="locationPage.html" class="place">Berkeley</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">C</h3>
+              <a href="locationPage.html" class="place">Carol Stream</a>
+              <a href="locationPage.html" class="place">Carpentersville</a>
+              <a href="locationPage.html" class="place">Cary</a>
+              <a href="locationPage.html" class="place">Crystal Lake</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">D</h3>
+              <a href="locationPage.html" class="place">Deer Park​</a>
+              <a href="locationPage.html" class="place">Deerfield</a>
+              <a href="locationPage.html" class="place">Des Plaines</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">E</h3>
+              <a href="locationPage.html" class="place">East Dundee</a>
+              <a href="locationPage.html" class="place">Elgin</a>
+              <a href="locationPage.html" class="place">Elk Grove Village</a>
+              <a href="locationPage.html" class="place">Elmhurst</a>
+              <a href="locationPage.html" class="place">Elmwood Park</a>
+              <a href="locationPage.html" class="place">Evanston</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">F</h3>
+              <a href="locationPage.html" class="place">Fox Lake</a>
+              <a href="locationPage.html" class="place">Fox River Grove</a>
+              <a href="locationPage.html" class="place">Franklin Park</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">G</h3>
+              <a href="locationPage.html" class="place">Gages Lake</a>
+              <a href="locationPage.html" class="place">Glen Ellyn </a>
+              <a href="locationPage.html" class="place">Glencoe </a>
+              <a href="locationPage.html" class="place">Glendale Heights </a>
+              <a href="locationPage.html" class="place">Glenview Grayslake </a>
+              <a href="locationPage.html" class="place">Gurnee</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">H</h3>
+              <a href="locationPage.html" class="place">Hainesville</a>
+              <a href="locationPage.html" class="place">Hanover Park</a>
+              <a href="locationPage.html" class="place">Harwood Hts</a>
+              <a href="locationPage.html" class="place">Hawthorn Woods</a>
+              <a href="locationPage.html" class="place">Highland Park</a>
+              <a href="locationPage.html" class="place">Highwood</a>
+              <a href="locationPage.html" class="place">Hillside</a>
+              <a href="locationPage.html" class="place">Hoffman Estates</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">I</h3>
+              <a href="locationPage.html" class="place">Ingleside</a>
+              <a href="locationPage.html" class="place">Inverness</a>
+              <a href="locationPage.html" class="place">Island Lake</a>
+              <a href="locationPage.html" class="place">Itasca</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">K</h3>
+              <a href="locationPage.html" class="place">Kenilworth</a>
+              <a href="locationPage.html" class="place">Kildeer</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">L</h3>
+              <a href="locationPage.html" class="place">Lake Barrington</a>
+              <a href="locationPage.html" class="place">Lake Bluff</a>
+              <a href="locationPage.html" class="place">Lake Forest</a>
+              <a href="locationPage.html" class="place">Lake In The Hills</a>
+              <a href="locationPage.html" class="place">Lake Villa</a>
+              <a href="locationPage.html" class="place">Lakemoor</a>
+              <a href="locationPage.html" class="place">Lake Zurich</a>
+              <a href="locationPage.html" class="place">Libertyville</a>
+              <a href="locationPage.html" class="place">Lincolnshire</a>
+              <a href="locationPage.html" class="place">Lincolnwood</a>
+              <a href="locationPage.html" class="place">Lindenhurst</a>
+              <a href="locationPage.html" class="place">Long Grove</a>
+            </li>
+
+            <li class="local-item">
+              <h3 class="local-title-letter">M</h3>
+              <a href="locationPage.html" class="place">Maywood</a>
+              <a href="locationPage.html" class="place">McHenry</a>
+              <a href="locationPage.html" class="place">Melrose Park</a>
+              <a href="locationPage.html" class="place">Morton Grove</a>
+              <a href="locationPage.html" class="place">Mount Prospect </a>
+              <a href="locationPage.html" class="place">Mundelein</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">N</h3>
+              <a href="locationPage.html" class="place">Niles</a>
+              <a href="locationPage.html" class="place">Norridge</a>
+              <a href="locationPage.html" class="place">North Chicago</a>
+              <a href="locationPage.html" class="place">North Shore</a>
+              <a href="locationPage.html" class="place">Northbrook</a>
+              <a href="locationPage.html" class="place">Northfield</a>
+              <a href="locationPage.html" class="place">Northlake</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">O</h3>
+              <a href="locationPage.html" class="place">Opa-Locka</a>
+            </li>
+            <li class="local-item">
+              <h3 class="local-title-letter">P</h3>
+              <a href="locationPage.html" class="place">Pembroke Pines</a>
+              <a href="locationPage.html" class="place">Pompano Beach</a>
+              <a href="locationPage.html" class="place">Plantation</a>
+            </li>
+
+            <li class="local-item">
+              <h3 class="local-title-letter">S</h3>
+              <a href="locationPage.html" class="place">Sunny Isles Beach</a>
+              <a href="locationPage.html" class="place">Sunrise</a>
+            </li>
+
+            <li class="local-item">
+              <h3 class="local-title-letter">W</h3>
+              <a href="locationPage.html" class="place">Weston</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="top">
+          <a href="index.html" class="logo">
+            <img src="./img/logo.svg" alt="" />
+          </a>
+          <div class="footer-nav">
+            <a href="#" class="footer-link">Главная</a>
+            <a href="#" class="footer-link">Каталог заведений</a>
+            <a href="#" class="footer-link">О нас</a>
+            <a href="#" class="footer-link">Блог</a>
+            <a href="#" class="footer-link">Связаться с нами</a>
+          </div>
+          <div class="right">
+            <a href="#" class="btn transperent">Добавить заведение</a>
+            <a href="#" class="btn">Начать изучение</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>© Russianrestaurant</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

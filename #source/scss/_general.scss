@@ -1,0 +1,84 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  &.lock {
+    overflow: hidden;
+  }
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: inherit;
+}
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0px 40px;
+  margin: 0 auto;
+  @media screen and (max-width: 744px) {
+    padding: 0px 15px;
+  }
+}
+.btn {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: var(--accent-color);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+  transition: background 0.1s linear;
+  cursor: pointer;
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    padding: 12px;
+  }
+  &:hover {
+    background: #eba111;
+  }
+}
+button {
+  border: none;
+}
+section {
+  padding: 72px 0;
+  @media screen and (max-width: 768px) {
+    padding: 56px 0;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 48px 0;
+  }
+}

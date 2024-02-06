@@ -1,0 +1,53 @@
+.hero-title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: normal;
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+.title_24 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  @media screen and (max-width: 1024px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+.section-title {
+  color: #444;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 110%;
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+.text_20 {
+  color: #444;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 110%;
+}
+.text_16 {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 110.5%;
+}
+.text_14 {
+  color: #444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-body">
+        <a href="index.html" class="logo"
+          ><img src="./img/logo.svg" alt=""
+        /></a>
+
+        <div class="headerRight">
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a href="catalogPage.html" class="nav-link"
+                  >Каталог заведений</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="aboutPage.html" class="nav-link">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a href="blogPage.html" class="nav-link">Блог</a>
+              </li>
+              <li class="nav-item current">
+                <a href="contactPage.html" class="nav-link">Связаться с нами</a>
+              </li>
+            </ul>
+            <div class="bottom-mobile">
+              <a href="#" class="btn transperent">Добавить заведение</a>
+              <a href="#" class="btn">Начать изучение</a>
+            </div>
+          </nav>
+          <div class="btn transperent">Добавить заведение</div>
+          <div class="header-burger"><span></span></div>
+        </div>
+      </div>
+    </header>
+    <section class="pageHero" style="background-image: url('./img/hero.jpeg')">
+      <div class="wrapper">
+        <div class="container">
+          <h2 class="hero-title">Our Company</h2>
+          <a href="catalogPage.html" class="btn">Начать изучение</a>
+        </div>
+      </div>
+    </section>
+    <section class="contactUs">
+      <img src="./img/soup.svg" alt="" class="soup" />
+      <img src="./img/varen.svg" alt="" class="varen" />
+      <img src="./img/meatTop.svg" alt="" class="meatTop" />
+      <div class="container">
+        <div class="contacts-card">
+          <h2 class="hero-title">Контакты</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <h3 class="title_24">
+                <img src="./img/mail.svg" alt="" />
+                Почта
+              </h3>
+              <a href="mailto:email@gmail.com" class="link">email@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <h3 class="title_24">
+                <img src="./img/addresMark.svg" alt="" />
+                Локация
+              </h3>
+              <a href="" class="link">1234567891</a>
+            </div>
+            <div class="contact-item">
+              <h3 class="title_24">
+                <img src="./img/prime_phone.svg" alt="" />
+                Номер телефона
+              </h3>
+              <a href="tel:1234567891" class="link">1234567891</a>
+            </div>
+          </div>
+        </div>
+        <div class="form-card">
+          <div class="card-head">
+            <p class="title_24">Связаться с нами</p>
+          </div>
+          <div class="card-body">
+            <form action="" class="" id="contactForm">
+              <div class="row">
+                <input type="text" name="name" placeholder="Имя*" />
+                <input type="text" placeholder="Номер телефона*" />
+              </div>
+              <input type="email" name="email" placeholder="Имейл" />
+              <textarea placeholder="Описание"></textarea>
+              <button type="submit" class="btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="top">
+          <a href="index.html" class="logo">
+            <img src="./img/logo.svg" alt="" />
+          </a>
+          <div class="footer-nav">
+            <a href="#" class="footer-link">Главная</a>
+            <a href="#" class="footer-link">Каталог заведений</a>
+            <a href="#" class="footer-link">О нас</a>
+            <a href="#" class="footer-link">Блог</a>
+            <a href="#" class="footer-link">Связаться с нами</a>
+          </div>
+          <div class="right">
+            <a href="#" class="btn transperent">Добавить заведение</a>
+            <a href="#" class="btn">Начать изучение</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>© Russianrestaurant</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
